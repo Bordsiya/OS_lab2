@@ -1,8 +1,8 @@
 # OS_lab2
 Operation Systems, ITMO, 3 year
 
-make clean
-make
-sudo insmod driver.ko
-gcc user.c -o user
-./user [args]
+1) make clean
+2) make
+3) sudo insmod driver.ko
+4) gcc user.c -o user
+5) ./user [args]
