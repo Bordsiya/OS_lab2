@@ -131,8 +131,6 @@ static ssize_t lab_driver_read(struct file *file, char __user *buffer, size_t co
     ssize_t len;
 
     printk(KERN_INFO "Read function called \n");
-    printk(KERN_INFO "ppos - %lld, count - %zu \n", *ppos, count);
-
     if (*ppos > 0 || count < BUF_MAX_SIZE) {
         return 0;
     }
@@ -168,9 +166,7 @@ static ssize_t lab_driver_write(struct file *file, const char __user *buffer, si
     sscanf(current_buffer, "%d %d", &struct_id, &pid);
     len = strlen(current_buffer);
     *ppos = len;
-    printk(KERN_INFO "struct_id = %d, pid = %d", struct_id, pid);
     printk(KERN_INFO "Write function over \n");
-    printk(KERN_INFO "ppos = %lld, count = %zu", *ppos, count);
     return len;
 }
 
