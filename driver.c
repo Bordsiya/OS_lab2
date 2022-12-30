@@ -9,8 +9,6 @@
 #define SEGMENTS_MAX 10
 #define PROC_NAME "lab_driver"
 
-MODULE_LICENSE("GPL");
-
 static struct proc_dir_entry* parent;
 static int struct_id = 0;
 static int pid = 0;
