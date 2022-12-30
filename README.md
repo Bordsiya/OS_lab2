@@ -6,3 +6,4 @@ Operation Systems, ITMO, 3 year
 3) sudo insmod driver.ko
 4) gcc user.c -o user
 5) ./user [args]
+6) pid search: lsof | grep "mem" | head
