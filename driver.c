@@ -134,8 +134,7 @@ static ssize_t lab_driver_read(struct file *file, char __user *buffer, size_t co
     if (*ppos > 0 || count < BUF_MAX_SIZE) {
         return 0;
     }
-    printk(KERN_INFO "after efault \n");
-    printk(KERN_INFO "struct_id -%d", struct_id);
+
     switch(struct_id){
     	case 0:
     		len = read_pci_dev(buffer);
