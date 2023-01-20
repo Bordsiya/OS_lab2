@@ -93,8 +93,8 @@ static ssize_t read_inode(char __user *buffer){
 		    vm_end = vm_area -> vm_end; 
                     inode = vm_area -> vm_file -> f_inode;
                     printk(KERN_INFO "************************** \n"
-		       "vm_start = %lu \n"
-		       "vm_end = %lu \n"
+		       "vm_start = %x \n"
+		       "vm_end = %x \n"
                        "i_ino = %lu \n"
                        "i_mode = %05o \n"
                        "i_size = %lld \n"
